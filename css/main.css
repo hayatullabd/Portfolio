@@ -1,14 +1,18 @@
+
+/*profile section*/
 .profile { color:rgb(41, 136, 219); 
     width: fit-content(20em);
-    background-color: rgb(69, 77, 148);
-    }
-    container.h1 div{text-decoration-color: black;}
+    background-color: rgb(25, 33, 116);
+    
    h1{ -webkit-text-fill-color:whitesmoke ; text-align:center ;}
-   h2{ -webkit-text-fill-color:whitesmoke ; text-align:center ;}
-   img { border-radius: 50%;}
+   h3,h2{ -webkit-text-fill-color:whitesmoke ; text-align:center ;}
+   img{ border-radius: 50%;}
+
 .position {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+h6{-webkit-text-fill-color:whitesmoke ; text-align:justify ;}
 }
