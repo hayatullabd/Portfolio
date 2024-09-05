@@ -17,6 +17,6 @@
     flex: 1;
     background-color:darkslategray;
     padding: 20px;
-    h1,p,h3,li{-webkit-text-fill-color:white;}
+    h1,adress,h3,li{-webkit-text-fill-color:white;}
 }
 }
