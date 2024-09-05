@@ -15,7 +15,8 @@
 }
 .right {
     flex: 1;
-    background-color: rgb(32, 238, 238);
+    background-color:rgb(47, 150, 190);
     padding: 20px;
+    h1,p{-webkit-text-fill-color:white;}
 }
 }
