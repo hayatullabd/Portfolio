@@ -1,22 +1,29 @@
-.profile {
-    display: flex;
+body,html{
+    margin: 0;
+    padding:0;
+    height:100;
+}
 
-.left {
-    flex: 1;
-    background-color: rgb(39, 65, 150);
-    padding: 20px;
-    img{ width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid #1175e99c;
-    }
-    h1,h2,h3,h4,h5{-webkit-text-fill-color: aliceblue;}
+.container{
+    display: flex;
 }
-.right {
-    flex: 1;
-    background-color:darkslategray;
+
+#profile {
+    background-color: #9084d1;
+    color:whitesmoke;
     padding: 20px;
-    h1,adress,h3,li{-webkit-text-fill-color:white;}
+    border-radius: 5px;
 }
+#profile img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #11e9359c;
+}
+#career_obj {
+    background-color: darkslategray;
+    color:whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
 }
