@@ -4,7 +4,35 @@ body,html{
     padding:0;
     height:100;
 }
+/* navbar */
 
+nav ul{
+    list-style: none;
+    background-color: #9084d1;
+    border-radius: 2rem;
+    padding: 2%;
+
+}
+nav ul li{
+    padding: 2%;
+    border-radius: 2rem;
+    border-style: dotted;
+    border-color: rgb(233, 237, 241);
+    background-color: #222021;
+    display: inline;
+}
+nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    margin: 2rem 2rem 2rem 2rem;
+
+}
+nav ul li a:hover {
+    padding: 1%;
+    background-color: darkgreen;
+  }
+
+/* profile section */
 .container{
     display: flex;
 }
