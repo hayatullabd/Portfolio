@@ -65,6 +65,10 @@ nav ul li a:hover {
     object-fit: cover;
     border: 2px solid #11e9359c;
 }
+#profile ul {
+    text-align: start;
+    list-style: none;
+}
 
 #career_obj {
     background-color: darkslategray;
@@ -163,13 +167,14 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        width: 100%; /* Ensure the navbar items stack well on small screens */
+        width: 100%;
         text-align: center;
         margin: 0.3rem 0;
     }
 
     nav ul li a {
         padding: 0.5rem 1rem;
-        font-size: 0.9rem; /* Reduce font size for better fit */
+        font-size: 0.9rem;
     }
+}
 }
