@@ -6,7 +6,6 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
 }
-
 /* Navbar styles */
 nav ul {
     display: flex;
@@ -90,4 +89,48 @@ nav ul li a:hover {
 
 #language {
     background-color: blueviolet;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    nav ul {
+        margin: 1rem 2rem 0rem 0rem;
+        justify-content: center;
+    }
+
+    #profile img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_1 {
+        flex-direction: column;
+    }
+
+    #profile img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        margin: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile img {
+        width: 150px;
+    }
 }
