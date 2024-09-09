@@ -132,3 +132,9 @@ border-radius: 10px;
     font-size: 40px;
     color: #7052a8;
 }
+#our_team img:hover {
+    background-color: midnightblue;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    transition: ease-in;
+}
