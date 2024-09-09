@@ -1,39 +1,42 @@
 /* General styles */
 body, html {
     background-color: #bfbfce;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
+
 /* Navbar styles */
 nav ul {
     display: flex;
     list-style: none;
     border-radius: 2rem;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
+    padding: 0;
 }
 
 nav ul li {
-    padding: 2%;
+    padding: 1%;
     border-radius: 2rem;
     border-style: dotted;
     border-color: rgb(233, 237, 241);
     background-color: #222021;
     margin: 0.5rem;
-    display: inline-block;
+    text-align: center;
 }
 
 nav ul li a {
     color: whitesmoke;
     text-decoration: none;
-    margin: 2rem 2rem 2rem 2rem;
+    display: block;
+    padding: 0.5rem 1.5rem;
 }
 
 nav ul li a:hover {
-    padding: 1%;
     background-color: darkgreen;
+    transition: background-color 0.3s ease;
 }
 
 /* Profile section */
@@ -41,6 +44,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
 }
 
 #profile {
@@ -50,10 +54,12 @@ nav ul li a:hover {
     border-radius: 5px;
     margin: 1rem;
     text-align: center;
+    max-width: 100%;
 }
 
 #profile img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
@@ -66,12 +72,15 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 5px;
     margin: 1rem;
+    max-width: 100%;
 }
 
+/* Skills, education, language sections */
 .container_1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
 }
 
 #skills, #education, #language {
@@ -81,7 +90,7 @@ nav ul li a:hover {
     border-radius: 5px;
     margin: 1rem;
     text-align: center;
-}
+    max-width: 100%;
 
 #education {
     background-color: darkslategray;
@@ -92,21 +101,28 @@ nav ul li a:hover {
 }
 
 /* Responsive Styles */
+
+/* Adjust for larger tablets and smaller desktops */
 @media screen and (max-width: 1200px) {
     nav ul {
-        margin: 1rem 2rem 0rem 0rem;
-        justify-content: center;
+        margin: 1rem 0;
     }
 
     #profile img {
-        width: 250px;
+        max-width: 250px;
+    }
+
+    .container_1, .container {
+        padding: 0.5rem;
     }
 }
 
+/* Adjust for tablets and small screens */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .container {
@@ -116,21 +132,44 @@ nav ul li a:hover {
 
     .container_1 {
         flex-direction: column;
+        align-items: center;
     }
 
     #profile img {
-        width: 200px;
+        max-width: 200px;
+    }
+
+    #profile, #career_obj, #skills, #education, #language {
+        margin: 0.5rem;
+        padding: 1rem;
+        width: 100%;
     }
 }
 
+/* Adjust for small phones */
 @media screen and (max-width: 480px) {
     nav ul {
-        margin: 1rem 0;
         flex-direction: column;
         align-items: center;
     }
 
     #profile img {
-        width: 150px;
+        max-width: 150px;
+    }
+
+    #profile, #career_obj, #skills, #education, #language {
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+
+    nav ul li {
+        width: 100%; /* Ensure the navbar items stack well on small screens */
+        text-align: center;
+        margin: 0.3rem 0;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem; /* Reduce font size for better fit */
     }
 }
