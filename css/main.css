@@ -8,12 +8,24 @@ body, html {
 }
 
 /* Navbar styles */
+#blog-header{
+    display: flex;
+    background-color: #151616;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    width: 70%;
+}
 nav ul {
     display: flex;
     list-style: none;
     border-radius: 2rem;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: end;
     padding: 0;
 }
 
@@ -35,16 +47,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: darkgreen;
+    background-color: rgb(12, 97, 209);
     transition: background-color 0.3s ease;
 }
 
 /* Profile section */
 .container {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem ;
+    padding-top: 10rem;
 }
 
 #profile {
@@ -58,7 +70,7 @@ nav ul li a:hover {
 }
 
 #profile img {
-    width: 100%;
+    width: 200%;
     max-width: 300px;
     height: auto;
     border-radius: 50%;
@@ -66,7 +78,12 @@ nav ul li a:hover {
     border: 2px solid #11e9359c;
 }
 
-#career_obj {
+#profile ul {
+    text-align: start;
+    list-style: none;
+}
+
+#career_obj,#experience {
     background-color: darkslategray;
     color: whitesmoke;
     padding: 20px;
@@ -76,34 +93,29 @@ nav ul li a:hover {
 }
 
 /* Skills, education, language sections */
-.container_1 {
+.others-section{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
 }
-
 #skills, #education, #language {
     background-color: #9084d1;
-    color: whitesmoke;
+    width: 100%;
     padding: 20px;
+    margin: 2rem;
     border-radius: 5px;
-    margin: 1rem;
-    text-align: center;
-    max-width: 100%;
-
-#education {
-    background-color: darkslategray;
+    color: whitesmoke;
+    width: 100%;
+    height: 20rem;
 }
-
-#language {
-    background-color: blueviolet;}
+.others-section h1{
+font-size: 30px;
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+background-color: #7052a8;
+padding: 10px;
+border-radius: 10px;
 }
 
 /* Team Section */
-.container-2{
-    display: flex;
-}
 #our_team img {
     width: 150px;
     height: 150px;
