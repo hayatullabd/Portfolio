@@ -8,6 +8,23 @@ body, html {
 }
 
 /* Navbar styles */
+#blog-header {
+    display: flex;
+    background-color: #151616;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 0 1rem;
+}
+
+nav {
+    width: 70%;  
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -15,10 +32,11 @@ nav ul {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    padding: 1%;
+    padding: 0.5rem 1rem;
     border-radius: 2rem;
     border-style: dotted;
     border-color: rgb(233, 237, 241);
@@ -31,22 +49,22 @@ nav ul li a {
     color: whitesmoke;
     text-decoration: none;
     display: block;
-    padding: 0.5rem 1.5rem;
 }
 
 nav ul li a:hover {
-    background-color: darkgreen;
+    background-color: rgb(12, 97, 209);
     transition: background-color 0.3s ease;
 }
 
-/* Profile section */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 1rem;
+    padding-top: 6rem;
 }
 
+/* Profile section */
 #profile {
     background-color: #9084d1;
     color: whitesmoke;
@@ -54,126 +72,198 @@ nav ul li a:hover {
     border-radius: 5px;
     margin: 1rem;
     text-align: center;
+    width: 100%;
     max-width: 100%;
 }
 
 #profile img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #11e9359c;
 }
+
 #profile ul {
     text-align: start;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#career_obj {
+#career_obj, #experience {
     background-color: darkslategray;
     color: whitesmoke;
     padding: 20px;
     border-radius: 5px;
     margin: 1rem;
+    width: 100%;
     max-width: 100%;
 }
 
 /* Skills, education, language sections */
-.container_1 {
+.others-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem;
 }
 
 #skills, #education, #language {
     background-color: #9084d1;
-    color: whitesmoke;
     padding: 20px;
-    border-radius: 5px;
     margin: 1rem;
+    border-radius: 5px;
+    color: whitesmoke;
+    width: 100%;
+    max-width: 600px;
+}
+
+.others-section h1 {
+    font-size: 30px;
     text-align: center;
-    max-width: 100%;
-
-#education {
-    background-color: darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #7052a8;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
 }
 
-#language {
-    background-color: blueviolet;
+/* Team Section */
+#our_team img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #11e9359c;
 }
+
+#our_team {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#our_team h1 {
+    font-size: 40px;
+    color: #7052a8;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #151616;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
 /* Responsive Styles */
-
-/* Adjust for larger tablets and smaller desktops */
-@media screen and (max-width: 1200px) {
-    nav ul {
-        margin: 1rem 0;
+@media (max-width: 1200px) {
+    nav {
+        width: 80%;
     }
 
     #profile img {
-        max-width: 250px;
-    }
-
-    .container_1, .container {
-        padding: 0.5rem;
+        width: 250px;
+        height: 250px;
     }
 }
 
-/* Adjust for tablets and small screens */
-@media screen and (max-width: 768px) {
+@media (max-width: 992px) {
     nav ul {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
     }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container_1 {
-        flex-direction: column;
-        align-items: center;
+    #profile {
+        padding: 15px;
     }
 
     #profile img {
-        max-width: 200px;
+        width: 200px;
+        height: 200px;
     }
 
-    #profile, #career_obj, #skills, #education, #language {
+    #skills, #education, #language {
+        padding: 15px;
         margin: 0.5rem;
-        padding: 1rem;
-        width: 100%;
+    }
+
+    .others-section h1 {
+        font-size: 24px;
     }
 }
 
-/* Adjust for small phones */
-@media screen and (max-width: 480px) {
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
-    }
-
-    #profile img {
-        max-width: 150px;
-    }
-
-    #profile, #career_obj, #skills, #education, #language {
-        margin: 0.5rem 0;
-        padding: 1rem;
     }
 
     nav ul li {
-        width: 100%;
-        text-align: center;
-        margin: 0.3rem 0;
+        padding: 1rem;
+        margin: 0.5rem 0;
     }
 
-    nav ul li a {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+    .container {
+        padding: 1rem 0;
+    }
+
+    #profile {
+        margin: 0.5rem;
+        padding: 10px;
+    }
+
+    #profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #skills, #education, #language {
+        padding: 10px;
+        margin: 0.5rem 0;
+    }
+
+    .others-section h1 {
+        font-size: 20px;
     }
 }
+
+@media (max-width: 576px) {
+    #blog-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    #profile, #career_obj, #experience, #skills, #education, #language {
+        margin: 0.5rem 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #our_team h1 {
+        font-size: 30px;
+    }
+
+    .footer {
+        padding: 0.5rem;
+    }
 }
