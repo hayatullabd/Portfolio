@@ -6,6 +6,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
 }
+/* header style */
 header{
     background-color: darkslategray;
     color: whitesmoke;
@@ -16,6 +17,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.logo h1{
+    text-align: center;
+    margin: 0 2rem;
 }
 
 nav ul{
@@ -31,7 +36,22 @@ nav ul li a{
     color: whitesmoke;
     text-decoration: none;
 }
+nav ul li a:hover{
+    background-color: #9e92df;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
 
+.nav-icons{
+    display: flex;
+    gap: 1rem;
+}
+.nav-icons a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    align-items: center;
+    margin: 0 1rem;
+}
 
 /* Profile section */
 .container {
