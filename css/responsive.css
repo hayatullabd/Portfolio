@@ -1,0 +1,224 @@
+/* General styles */
+body, html {
+    background-color: #bfbfce;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header style */
+header {
+    background-color: darkslategray;
+    color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo h1 {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #9e92df;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-icons a {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.nav-icons a:hover {
+    color: rgb(24, 219, 128);
+    background-color: #7052a8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Profile section */
+.container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+#profile {
+    background-color: #9084d1;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 1rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+#profile img {
+    width: 200%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #11e9359c;
+}
+
+#profile ul {
+    text-align: start;
+    list-style: none;
+}
+
+#career_obj, #experience {
+    background-color: darkslategray;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 1rem;
+    max-width: 100%;
+}
+
+/* Skills, education, language sections */
+.others-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skills, #education, #language {
+    background-color: #9084d1;
+    padding: 20px;
+    margin: 1rem;
+    border-radius: 5px;
+    color: whitesmoke;
+    flex: 1;
+    min-width: 300px;
+}
+
+.others-section h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #7052a8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Team Section */
+#our_team img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 2px solid #11e9359c;
+}
+
+#our_team {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#our_team h1 {
+    font-size: 40px;
+    color: #7052a8;
+}
+
+#our_team img:hover {
+    background-color: midnightblue;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    transition: ease-in;
+}
+
+/* Responsive Styles */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-icons {
+        justify-content: center;
+    }
+
+    #profile img {
+        width: 150%;
+    }
+
+    .others-section {
+        flex-direction: column;
+    }
+
+    #skills, #education, #language {
+        height: auto;
+        margin: 1rem 0;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .others-section {
+        flex-direction: column;
+    }
+
+    #skills, #education, #language {
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    nav ul {
+        display: flex;
+    }
+
+    .others-section {
+        flex-direction: row;
+    }
+}
