@@ -6,50 +6,32 @@ body, html {
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Navbar styles */
-#blog-header{
-    display: flex;
-    background-color: #151616;
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
-    position: fixed;
+header{
+    background-color: darkslategray;
+    color: whitesmoke;
+    position: absolute;
     width: 100%;
 }
 nav{
-    width: 70%;
-}
-nav ul {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
     list-style: none;
-    border-radius: 2rem;
-    flex-wrap: wrap;
-    justify-content: end;
-    padding: 0;
-}
+    display: flex;
+    gap: 1rem;
 
-nav ul li {
-    padding: 1%;
-    border-radius: 2rem;
-    border-style: dotted;
-    border-color: rgb(233, 237, 241);
-    background-color: #222021;
-    margin: 0.5rem;
-    text-align: center;
 }
-
-nav ul li a {
+nav ul li{
+    display: inline;
+}
+nav ul li a{
     color: whitesmoke;
     text-decoration: none;
-    display: block;
-    padding: 0.5rem 1.5rem;
 }
 
-nav ul li a:hover {
-    background-color: rgb(12, 97, 209);
-    transition: background-color 0.3s ease;
-}
 
 /* Profile section */
 .container {
