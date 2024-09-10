@@ -52,6 +52,12 @@ nav ul li a:hover{
     align-items: center;
     margin: 0 1rem;
 }
+.nav-icons a:hover{
+    color: rgb(24, 219, 128);
+    background-color: #7052a8;
+    border-radius: 10px;
+    padding: 10px;
+}
 
 /* Profile section */
 .container {
@@ -102,7 +108,7 @@ nav ul li a:hover{
     background-color: #9084d1;
     width: 100%;
     padding: 20px;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 5px;
     color: whitesmoke;
     width: 100%;
